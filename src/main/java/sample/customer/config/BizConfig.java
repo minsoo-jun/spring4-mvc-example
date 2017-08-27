@@ -21,7 +21,7 @@ public class BizConfig {
         return messageSource;
     }
 
-	// 밑의 4, 5설정은 5.2.3.4절에서 스프링 MVC의 JavaConfig로 이동
+	//스프링 MVC의 JavaConfig로 이동
 	@Bean
 	public Validator globalValidator(MessageSource messageSource) {
 		LocalValidatorFactoryBean validatorBean 
