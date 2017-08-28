@@ -72,12 +72,14 @@ public class CustomerEditController {
             SessionStatus sessionStatus)
                                     throws DataNotFoundException {
         customerService.update(customer);
-
+        return "redirect:edited";
+/**
         redirectAttributes.addFlashAttribute("editedCustomer", customer);
-        
+
         sessionStatus.setComplete();
-        
+
         return "redirect:/customer";
+ **/
     }
 
     @RequestMapping(value = "/edited", method = GET)
